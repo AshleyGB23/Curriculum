@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic;
+}
+
+.print-area{
+    width: 50%;
+    margin: 20px auto;
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 5px solid #2C402D;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    border: 2px solid #2C402D;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px gray;
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.header-text{
+    color: #2C402D;
+    width: 70%;
+    margin-left: auto;
+}
+.header-text h1{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
+.header-text p{
+    font-size: 18px;
+    color: #2C402D;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*LADO IZQUIERDO*/
+.lado-izq{
+    width: 30%;
+    background-color: #E9F1EA;
+}
+.lado-izq .datos{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.datos h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2C402D;
+}
+.datos h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C402D;
+}
+.datos h4{
+    font-size: 13px;
+    font-weight: normal;
+    color: #606560;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-attachment: gray;
+    /*border: 2 solid #333333;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+*/
+}
+/*
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 45%;
+    background-color: #333333;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}*/
+.datos li{
+    margin-left: 20px;
+    list-style-type: square;
+    color: #2C402D;
+}
+
+
+
+/*LADO DERECHO*/
+.lado-der{
+    width: 70%;
+    background-color: #FFFFFF;
+}
+.lado-der .datos{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.lado-der .datos p{
+    font-size: 14px;
+    color: gray;
+}
+
+.lado-der .linea{
+    border-top: 1px solid grey;
+    height: 2px;
+    max-width: 790px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 430px;
+}
+
